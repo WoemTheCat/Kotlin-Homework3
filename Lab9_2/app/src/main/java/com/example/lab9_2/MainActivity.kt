@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                 edHeight.text.isEmpty() -> showToast("請輸入身高")
                 edWeight.text.isEmpty() -> showToast("請輸入體重")
                 edAge.text.isEmpty() -> showToast("請輸入年齡")
+                else -> runThread()
             }
         }
     }

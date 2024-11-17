@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
         }
         array.recycle()
 
-        spinner.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, count)
+        spinner.adapter = ArrayAdapter(this,
+            android.R.layout.simple_list_item_1, count)
         gridView.numColumns = 3
         gridView.adapter = MyAdapter(this, item, R.layout.adapter_vertical)
         listView.adapter = MyAdapter(this, item, R.layout.adapter_horizontal)
